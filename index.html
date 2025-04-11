@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Program</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Blurred background for frosted effect -->
+    <div class="blurred-bg"></div>
+
+    <!-- Popup Login -->
+    <div id="popup">
+        <h2>Enter Code</h2>
+        <input type="text" id="code-input" placeholder="Enter the code..." />
+        <button id="submit-code">Submit</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to Your Workout Program!</h1>
+        <p>Choose your difficulty and start working out.</p>
+        
+        <div class="buttons">
+            <div class="btn-card" id="beginner-btn">Beginner <div id="beginner-lock" class="lock-icon">🔒</div></div>
+            <div class="btn-card" id="hard-btn">Hard <div id="hard-lock" class="lock-icon">🔒</div></div>
+            <div class="btn-card" id="hardcore-btn">Hardcore <div id="hardcore-lock" class="lock-icon">🔒</div></div>
+        </div>
+        
+        <div class="schedule" id="schedule"></div>
+        <button id="submit-workout" style="display:none;">Submit</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
